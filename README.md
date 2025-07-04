@@ -1,4 +1,3 @@
-```markdown
 # VANET CG+Frame Reasoning Framework
 
 **Framework for distributed, real-time reasoning in Vehicular Ad-Hoc Networks (VANETs) using integrated conceptual graphs and frame-based knowledge representation.**
@@ -8,18 +7,16 @@
 ## 📖 Description
 
 This repository implements a novel middleware that couples:
-- **Conceptual Graphs (CGs):** Bipartite graphs modeling inter-entity relations (e.g. `send`, `located_in`, `propagate`).
+- **Conceptual Graphs (CGs):** Bipartite graphs modeling inter-entity relations (e.g., `send`, `located_in`, `propagate`).
 - **Frame-Based Schemas:** Modular frames for vehicles and messages with dynamic slots (position, speed, TTL) and procedural attachments (e.g., `update_position()`, `decrement_ttl()`).
 
 It provides:
 - A **reasoning engine** (Horn-clause solver) embedded in each simulated vehicle.
-- **NS-3.35** simulation scripts (802.11p stack) for urban VANET scenarios.
+- **NS-3.35** simulation scripts (IEEE 802.11p) for urban VANET scenarios.
 - **Python** scripts for data processing and figure generation.
 - Configuration files for simulation parameters and CG rule sets.
 
 ## 📂 Repository Structure
-
-```
 
 /
 ├── ns3/                         # NS-3 simulation scripts & configuration
@@ -46,7 +43,7 @@ It provides:
 ├── LICENSE
 └── README.md
 
-````
+
 
 ## ⚙️ Requirements
 
@@ -63,7 +60,7 @@ It provides:
    ```bash
    git clone https://github.com/rubences/vanet-cg-frame.git
    cd vanet-cg-frame
-````
+
 
 2. **Run NS-3 simulations**
 
@@ -99,13 +96,4 @@ Contributions are welcome! Please open an issue or submit a pull request with yo
 
 This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
----
 
-**Primary repository:**
-[https://github.com/your-repo/vanet-cg-frame](https://github.com/your-repo/vanet-cg-frame)
-
-**Author’s fork (“rubences”):**
-[https://github.com/rubences/vanet-cg-frame](https://github.com/rubences/vanet-cg-frame)
-
-```
-```
