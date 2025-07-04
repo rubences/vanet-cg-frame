@@ -18,30 +18,36 @@ It provides:
 
 ## 📂 Repository Structure
 
-/
-├── ns3/                         # NS-3 simulation scripts & configuration
-│   ├── scratch/
-│   ├── wscript
-│   └── ...
-├── reasoning/                   # Reasoning engine implementation
-│   ├── cg\_constructor.py
-│   ├── frame\_manager.py
-│   ├── horn\_solver.py
-│   └── ...
-├── data/                        # Sample output CSVs and raw traces
-│   ├── delivery\_ratio.csv
-│   ├── latency.csv
-│   └── ...
-├── analysis/                    # Jupyter notebooks & plotting scripts
-│   ├── plot\_delivery.py
-│   ├── plot\_latency.py
-│   └── ...
-├── docs/                        # LaTeX article source and figures
-│   ├── manuscript.tex
-│   ├── figures/
-│   └── bibliography.bib
-├── LICENSE
-└── README.md
+vanet-cg-frame/
+├── ns3/ # NS-3.35 simulation scenarios and configuration
+│ ├── scratch/ # Custom simulation scripts (e.g., vanet_cg_frame.cc)
+│ ├── wscript # Build configuration for Waf
+│ └── helpers/ # Utility modules and models (mobility, MAC tweaks)
+│
+├── reasoning/ # Core reasoning engine implementation
+│ ├── cg_constructor.py # Builds conceptual graph from frame data
+│ ├── frame_manager.py # Manages frame instances and attachments
+│ ├── horn_solver.py # Lightweight forward-chaining Horn-clause solver
+│ └── utils.py # Shared data structures, serialization, logging
+│
+├── data/ # Simulation outputs and trace files
+│ ├── delivery_ratio.csv # Aggregated delivery ratio results
+│ ├── latency.csv # End-to-end latency measurements
+│ └── raw_traces/ # Per-run NS-3 trace logs
+│
+├── analysis/ # Data processing and visualization
+│ ├── plot_delivery.py # Generates Delivery Ratio vs TTL chart
+│ ├── plot_latency.py # Generates Latency vs TTL chart
+│ ├── plot_scalability.py # Generates density-impact figures
+│ └── notebooks/ # Optional Jupyter analyses and tutorials
+│
+├── docs/ # Manuscript and supplementary materials
+│ ├── manuscript.tex # LaTeX source for the article
+│ ├── figures/ # TikZ and PDF diagrams for the paper
+│ └── bibliography.bib # BibTeX references
+│
+├── LICENSE # MIT License file
+└── README.md # Project overview and usage instructions
 
 
 
